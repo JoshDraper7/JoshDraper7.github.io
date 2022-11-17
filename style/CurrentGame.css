@@ -1,0 +1,63 @@
+* {
+    font-family: azonix;
+}
+.body {
+    height: 100vh;
+}
+
+.body-inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.card_images {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    padding-bottom: 20px;
+}
+
+img:hover{
+    transform: scale(1.05);
+    border: 2px solid white;
+    border-color: white;
+}
+
+.new-cards-button:hover{
+    text-decoration: underline;
+    border-color: white;
+    color: white;
+}
+.new-cards-button {
+    margin-bottom: 30px;
+    width: 200px;
+    background: none;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.header {
+    background-image: url('../images/sunset_basket.jpg') !important;
+
+}
+
+img {
+    margin: 0px 0px 5px 5px;
+}
+
+p {
+    color: white;
+}
+
+.image {
+    object-fit: contain;
+    width: 0px;
+}
+
+td, th {
+    padding: 10px;
+}
