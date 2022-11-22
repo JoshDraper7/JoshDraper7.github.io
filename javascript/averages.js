@@ -5,7 +5,7 @@ const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 window.onload = async function() {
     async function loadData() {
         const { data, error } = await _supabase
-                .from('Set')
+                .from('Set_Actual')
                 .select('tot_attempts, tot_made, tot_percentage, distance');
         console.log(data)
         console.log(error)
