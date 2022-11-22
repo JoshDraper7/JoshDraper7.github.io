@@ -14,7 +14,7 @@ window.onload = async function() {
         }
         let percentage = made / attempts;
         const { data, error } = await _supabase
-                .from('Input')
+                .from('Input_Actual')
                 .insert([
                 {distance: distance, attempts: attempts, made: made, percentage: percentage}
             ])
@@ -28,7 +28,7 @@ window.onload = async function() {
         }
         let percentage = made / attempts;
         const { data, error } = await _supabase
-                .from('Set')
+                .from('Set_Actual')
                 .insert([
                 {distance: distance, tot_attempts: attempts, tot_made: made, tot_percentage: percentage}
             ])
